@@ -1,0 +1,8 @@
+prefix=/home/vas0006/workspaces/gazebo_robots_ws/install
+
+Name: rc_car_gazebo
+Description: Description of rc_car_gazebo
+Version: 0.1.3
+Cflags: 
+Libs: -L/home/vas0006/workspaces/gazebo_robots_ws/install/lib 
+Requires: 

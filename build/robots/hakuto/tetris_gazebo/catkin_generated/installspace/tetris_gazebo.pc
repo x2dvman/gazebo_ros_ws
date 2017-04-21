@@ -1,0 +1,8 @@
+prefix=/home/vas0006/workspaces/gazebo_robots_ws/install
+
+Name: tetris_gazebo
+Description: Description of tetris_gazebo
+Version: 0.1.8
+Cflags: 
+Libs: -L/home/vas0006/workspaces/gazebo_robots_ws/install/lib 
+Requires: 

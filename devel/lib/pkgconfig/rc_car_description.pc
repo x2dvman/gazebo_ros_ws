@@ -1,0 +1,8 @@
+prefix=/home/vas0006/workspaces/gazebo_robots_ws/devel
+
+Name: rc_car_description
+Description: Description of rc_car_description
+Version: 0.1.3
+Cflags: 
+Libs: -L/home/vas0006/workspaces/gazebo_robots_ws/devel/lib 
+Requires: 

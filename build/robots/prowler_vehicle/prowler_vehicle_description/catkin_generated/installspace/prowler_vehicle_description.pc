@@ -1,0 +1,8 @@
+prefix=/home/vas0006/workspaces/gazebo_robots_ws/install
+
+Name: prowler_vehicle_description
+Description: Description of prowler_vehicle_description
+Version: 0.1.3
+Cflags: 
+Libs: -L/home/vas0006/workspaces/gazebo_robots_ws/install/lib 
+Requires: 

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="car_low_poly">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <surface>
+          <friction>
+          <ode>
+            <mu>0.7</mu>
+          </ode>
+          </friction>
+          <contact>
+          <ode>
+            <soft_cfm>1</soft_cfm>
+            <kp>1000000</kp>
+            <kd>1</kd>
+            <max_vel>0.000001</max_vel>
+            <min_depth>0.01</min_depth>
+          </ode>
+          </contact>
+        </surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://car_low_poly/car_low_poly.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://car_low_poly/car_low_poly.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
