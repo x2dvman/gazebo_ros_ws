@@ -7,6 +7,18 @@
 #IncludeRegexTransform: 
 
 /home/vas0006/workspaces/gazebo_robots_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_test_control.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+math.h
+-
+time.h
+-
+unistd.h
+-
 gazebo/gazebo.hh
 -
 gazebo/physics/physics.hh

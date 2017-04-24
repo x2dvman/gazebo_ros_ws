@@ -26,8 +26,8 @@
   void joy_cb(const sensor_msgs::Joy::ConstPtr& msg)
   {
     joy_msg = *msg;
-    ackermann_msg.speed = joy_msg.axes[3];
-    ackermann_msg.steering_angle = joy_msg.axes[2];
+    ackermann_msg.speed = joy_msg.axes[1] * 223.0;
+    ackermann_msg.steering_angle = joy_msg.axes[2] * 30.0;
   }
 
   int main(int argc, char **argv)
@@ -46,14 +46,14 @@
           ("ackermann_cmd", 1);
 
       // Loop timing
-        ros::Rate rate(20.0);
+        ros::Rate rate(10.0);
 
       // Main Loop
         while(ros::ok())
         {
-          // ros::spinOnce();
+          ros::spinOnce();
           ackermann_pub.publish(ackermann_msg);
-          // printf("message: %.6f  %.6f \n", ackermann_msg.speed, ackermann_msg.steering_angle);
+          printf("message: %.6f  %.6f \n", ackermann_msg.speed, ackermann_msg.steering_angle);
 
           rate.sleep();
         }

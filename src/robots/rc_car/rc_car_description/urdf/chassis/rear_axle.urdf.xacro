@@ -138,7 +138,7 @@
       <child link="left_rear_wheel"/>
       <origin xyz="0 ${front_axle_W/2 - shock_y_offset} -${shock_z_offset - shock_H/2 + chassis_H/2 + ground_clearance - wheel_front_R}"/>
       <axis xyz="0 1 0"/>
-      <dynamics damping="0.01"/>
+      <dynamics damping="0.0" friction="0.0"/>
       <limit effort="${axle_eff_limit}" velocity="${axle_vel_limit}"/>
     </joint>
 
@@ -193,7 +193,7 @@
       <child link="right_rear_wheel"/>
       <origin xyz="0 -${front_axle_W/2 - shock_y_offset} -${shock_z_offset - shock_H/2 + chassis_H/2 + ground_clearance - wheel_front_R}"/>
       <axis xyz="0 1 0"/>
-      <dynamics damping="0.01"/>
+      <dynamics damping="0.0" friction="0.0"/>
       <limit effort="${axle_eff_limit}" velocity="${axle_vel_limit}"/>
     </joint>
 

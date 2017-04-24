@@ -127,6 +127,7 @@
       <axis xyz="0 0 1"/>
       <limit lower="${-degrees_45}" upper="${degrees_45}"
              effort="${steer_stall_torque}" velocity="${steer_no_load_speed}"/>
+      <!-- <dynamics damping="0.01" /> -->
     </joint>
 
     <transmission name="front_left_steering_trans">
@@ -174,6 +175,7 @@
       <axis xyz="0 0 1"/>
       <limit lower="${-degrees_45}" upper="${degrees_45}"
              effort="${steer_stall_torque}" velocity="${steer_no_load_speed}"/>
+      <!-- <dynamics damping="0.01" /> -->
     </joint>
 
     <transmission name="front_right_steering_trans">
