@@ -20,5 +20,14 @@
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
+
+    <road name="circuit">
+      <width>2</width>
+      <point>0 0 0.01 </point>
+      <point>2 0 0.01 </point>
+      <point>4 0 0.01 </point>
+      <point>6 2 0.01 </point>
+    </road>
+
   </world>
 </sdf>
